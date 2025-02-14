@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addtodo {
+  display: flex;
+  gap: 10px;
+}
+.inputext {
+  width: 300px;
+  height: 50px;
+}
+.addbutton {
+  width: 60px;
+  height: 50px;
+  background-color: #3c82f6;
+  color: white;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+.list {
+  width: 360px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  padding: 5px;
+}
+.list button {
+  width: 67px;
+  height: 30px;
+  color: red;
+  background-color: #fef2f2;
+  border-radius: 3px;
+  border: 0;
+}
+.todolist {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
