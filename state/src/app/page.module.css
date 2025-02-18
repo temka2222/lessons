@@ -7,12 +7,13 @@
   justify-content: center;
   align-items: center;
 }
-.addtodo {
+.addtask {
   display: flex;
   gap: 10px;
 }
-.inputext {
-  width: 300px;
+.inputtask {
+  padding-left: 5px;
+  width: 210px;
   height: 50px;
 }
 .addbutton {
@@ -20,6 +21,8 @@
   height: 50px;
   background-color: #3c82f6;
   color: white;
+  border-radius: 5px;
+  border: 0;
 }
 .checkbox {
   width: 20px;
@@ -53,5 +56,45 @@
 .buttons {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.buttons button {
+  width: 80px;
+  height: 40px;
+  background-color: #f3f4f6;
+  border-radius: 5px;
+  border: 0px;
+  color: #6b7280;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+.taskmsg {
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+
+  color: #6b7280;
+}
+.taskmsg button {
+  color: #ef4444;
+  background-color: white;
+  border: 0;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+.footer > p:nth-child(1) {
+  color: #6b7280;
+}
+.footer > p:nth-child(2) {
+  color: #3b73ed;
+}
+.clicked {
+  background-color: #3c82f6;
 }
