@@ -46,7 +46,7 @@ export default function Home() {
   });
   const Taskmsg = () => {
     if (toDoArr.length == 0) {
-      return <p>No tasks yet. Add one above!</p>;
+      return <p style={{ color: "#6b7280" }}>No tasks yet. Add one above!</p>;
     }
 
     return (
@@ -111,17 +111,21 @@ export default function Home() {
                 checked={item.Completed}
                 onChange={() => checkboxchange(index)}
               ></input>
-              <p className={item.Completed == true ? styles.checked : ""}>
-                {item.task}
-              </p>
-              <button
-                onClick={() => {
-                  deletebtn(index);
-                  ``;
-                }}
-              >
-                delete
-              </button>
+              <div className={styles.listbtn}>
+                <p className={item.Completed == true ? styles.checked : ""}>
+                  {item.task}
+                </p>
+                <button
+                  className={styles.button}
+                  style={{ display: item.Completed == true ? "block" : "" }}
+                  onClick={() => {
+                    deletebtn(index);
+                    ``;
+                  }}
+                >
+                  delete
+                </button>
+              </div>
             </div>
           );
         })}

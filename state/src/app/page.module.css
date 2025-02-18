@@ -33,11 +33,24 @@
   height: 50px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  justify-content: space-between;
+  gap: 30px;
+  justify-content: start;
   align-items: center;
   background-color: #f9fafb;
   padding: 5px;
+}
+.listbtn {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  display: none;
+}
+.list:hover .button {
+  display: block;
 }
 .list button {
   width: 67px;
