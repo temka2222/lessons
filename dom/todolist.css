@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.addtodo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.addtodo input {
+  width: 300px;
+  height: 50px;
+}
+.addtodo button {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(124, 124, 204);
+}
+.todolist {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+.todolist div {
+  width: 300px;
+  height: 50px;
+}
+.todolist button {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+.todotext {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.checkbox input {
+  width: 20px;
+  height: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: rgb(139, 139, 178);
+}
+.checkbtn {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

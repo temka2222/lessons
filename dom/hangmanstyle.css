@@ -1,0 +1,42 @@
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: cornflowerblue;
+  border: 10px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+}
+.word {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.word div {
+  flex: 1;
+  border-bottom: 2px solid white;
+}
+.character {
+  width: 100%;
+  height: 20%;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.character button {
+  background-color: rgb(169, 169, 226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guesses {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
